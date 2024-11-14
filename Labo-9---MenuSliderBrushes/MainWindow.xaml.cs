@@ -32,5 +32,16 @@ namespace Labo_9___MenuSliderBrushes
             }
 
         }
+
+        private void eersteSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            eersteGetaltextBox.Text = ((int)eersteSlider.Value).ToString();
+        }
+
+        private void tweedeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            tweedegetaltextBox.Text = ((int)tweedeSlider.Value).ToString();
+        }
+
     }
 }

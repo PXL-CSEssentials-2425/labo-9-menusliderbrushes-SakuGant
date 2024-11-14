@@ -30,8 +30,8 @@
             <TextBox Grid.Column="1" Grid.Row="0" x:Name="eersteGetaltextBox" HorizontalAlignment="Left" Width="100"/>
             <Label Grid.Column="0" Grid.Row="1" Content="Tweede getal:"/>
             <TextBox  Grid.Column="1" Grid.Row="1" x:Name="tweedegetaltextBox" HorizontalAlignment="Left" Width="100"/>
-            <Slider x:Name="eersteSlider" Grid.Column="1" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Center" Width="120"/>
-            <Slider x:Name="tweedeSlider" Grid.Column="1" HorizontalAlignment="Left" Margin="105,8,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.455,1.894" Grid.Row="1"/>
+            <Slider x:Name="eersteSlider" Grid.Column="1" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Center" Width="120" Minimum="1" Maximum="5" ValueChanged="eersteSlider_ValueChanged" />
+            <Slider x:Name="tweedeSlider" Grid.Column="1" HorizontalAlignment="Left" Margin="105,8,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.455,1.894" Grid.Row="1" Minimum="1" Maximum="5" ValueChanged="tweedeSlider_ValueChanged"/>
 
         </Grid>
     </DockPanel>
