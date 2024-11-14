@@ -20,5 +20,17 @@ namespace Labo_9___MenuSliderBrushes
         {
             InitializeComponent();
         }
+
+        private void closeMenu_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Are You sure?", "Aflsuiten",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question) == MessageBoxResult.Yes)
+            
+            {
+                this.Close();
+            }
+
+        }
     }
 }
